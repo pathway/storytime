@@ -4,13 +4,23 @@ random.randint(1,4)
 
 def menu(question,items):
   while True:
+
     for idx, it in enumerate(items):
       print(idx,it)
+    print(idx+1,"Random")
+
     answer= input(question+" > ")
     index = int(answer)
+
+    if index==len(items):
+      picked= random.choice(items)
+      print("You selected: ",picked)
+      return picked
+
     if index<0 or index>=len(items):
       print("Invalid answer")
       continue
+
     picked = items[ index ]
     print("You selected: ",picked)
     return picked
@@ -40,7 +50,7 @@ def make_story(name, food, desaster, artifact):
   print("PPS. Why are you still here??")
 
 
-items = ['Johnny','Sandy','Bob','sand','fillup','rock','billy','jacob']
+items = ['Johnny','Sandy','Bob','sand','fillup','rock','billy','jacob','Artifact']
 Name = menu("Choose a name",items)
 
 items = ['apple', 'rock', 'Sand', 'dragon']
