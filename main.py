@@ -1,6 +1,6 @@
 import random
 
-random.randint(1,4)
+#random.randint(1,4)
 
 def menu(question,items):
   while True:
@@ -25,7 +25,7 @@ def menu(question,items):
     print("You selected: ",picked)
     return picked
 
-
+ 
 def make_story(name, food, desaster, artifact):
   item='meteor'
   about_item='going straight at you'
@@ -56,24 +56,36 @@ Name = menu("Choose a name",items)
 items = ['apple', 'rock', 'Sand', 'dragon']
 Food = menu("Choose food",items)
 
-items = ['Valcano erapshen', 'apiring black hole', 'Shaknaydo', 'baby asprin']
-Desaster = menu("Choose a item",items)
+disaster_dict = {
+  'Valcano erapshen' : " burned by hot ash",
+  'Shaknaydo' : " bitten by a shark ",
+}
+#print( disaster.keys() )
 
-items = ('Tunami sumoner', 'Time mashin', 'Nuke','super' 'milk')
+#items = ['Valcano erapshen', 'apiring black hole', 'Shaknaydo', 'baby asprin']
+
+Desaster = menu("Choose a item", list(disaster_dict.keys()) )
+print(" Method of death: ", disaster_dict[ Desaster ] )
+
+items = ('Tunami sumoner', 'Time mashin', 'Nuke','super milk')
 Artifact = menu("Choose artifact",items)
+
+items = ('your mom','1 mm of water')
+death = menu("Choose your death",items)
 
 
 
 make_story(Name, Food, Desaster, Artifact )
 
 
-#'''
+'''
 #make_story('Johnny', 'eggs', 'volcano erapshen', 'tunami sumoner' )
 
 #make_story('Sandy', 'pizza', 'apiring blackhole', 'Timemashin')
 
 ##make_story('bob', 'stone', 'sharknato', 'Nuke',binana)
 
-print("._.")
 
-##'''
+
+'''
+
