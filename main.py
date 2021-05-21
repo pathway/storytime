@@ -1,3 +1,6 @@
+import random
+
+random.randint(1,4)
 
 def menu(question,items):
   while True:
@@ -36,11 +39,13 @@ def make_story(name, food, desaster, artifact):
   print("PS. Its over, you can stop reading now ")
   print("PPS. Why are you still here??")
 
+
 items = ['Johnny','Sandy','Bob','sand','fillup','rock','billy','jacob']
 Name = menu("Choose a name",items)
 
 items = ['apple', 'rock', 'Sand', 'dragon']
 Food = menu("Choose food",items)
+
 items = ['Valcano erapshen', 'apiring black hole', 'Shaknaydo', 'baby asprin']
 Desaster = menu("Choose a item",items)
 
@@ -59,10 +64,6 @@ make_story(Name, Food, Desaster, Artifact )
 
 ##make_story('bob', 'stone', 'sharknato', 'Nuke',binana)
 
-print(".-.")
+print("._.")
 
 ##'''
-
-
-
-
