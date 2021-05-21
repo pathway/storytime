@@ -44,7 +44,7 @@ Food = menu("Choose food",items)
 items = ['Valcano erapshen', 'apiring black hole', 'Shaknaydo', 'baby asprin']
 Desaster = menu("Choose a item",items)
 
-items = ['Tunami sumoner', 'Time mashin', 'Nuke','' super milk']
+items = ('Tunami sumoner', 'Time mashin', 'Nuke','super' 'milk')
 Artifact = menu("Choose artifact",items)
 
 
@@ -59,7 +59,7 @@ make_story(Name, Food, Desaster, Artifact )
 
 ##make_story('bob', 'stone', 'sharknato', 'Nuke',binana)
 
-print("._.")
+print(".-.")
 
 ##'''
 
